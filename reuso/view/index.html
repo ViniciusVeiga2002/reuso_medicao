@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Forge Workforce</title><script src="../tailwind.js"></script>
+  <script>tailwind.config={theme:{extend:{colors:{orange:'#ff7a18',ink:'#171a1d',page:'#f3f4f6'},fontFamily:{sans:['Inter','Arial','sans-serif']}}}}</script>
+  <title>Home</title>
+</head>
+<body class="min-h-screen bg-page font-sans text-[#202428] ">
+<div class="min-h-screen lg:flex">
+  <aside class="bg-ink text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+    <div class="flex items-center justify-between p-5 lg:p-6">
+      <div class="flex items-center gap-3"><b class="grid size-10 place-items-center rounded-xl bg-orange text-xl text-ink">F</b><div><p class="font-bold">FORGE</p><p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p></div></div><span class="lg:hidden">☰</span>
+    </div>
+    <nav class="hidden flex-1 space-y-2 px-3 lg:block">
+      <a href="index.html" class="flex gap-4 rounded-lg border-l-4 border-orange bg-[#22272b] px-4 py-3 text-sm font-bold"><span>▦</span>Visão geral</a>
+      <a href="funcionarios.html" class="flex gap-4 px-5 py-3 text-sm font-semibold text-[#aeb5bc] hover:bg-[#22272b]"><span>♣</span>Funcionários</a>
+      <a href="cargos.html" class="flex gap-4 px-5 py-3 text-sm font-semibold text-[#aeb5bc] hover:bg-[#22272b]"><span>▤</span>Cargos</a>
+      <a href="funcoes.html" class="flex gap-4 px-5 py-3 text-sm font-semibold text-[#aeb5bc] hover:bg-[#22272b]"><span>⚙</span>Funções</a>
+      <a href="demandas.html" class="flex gap-4 px-5 py-3 text-sm font-semibold text-[#aeb5bc] hover:bg-[#22272b]"><span>✓</span>Demandas</a>
+      <a href="relatorios.html" class="flex gap-4 px-5 py-3 text-sm font-semibold text-[#aeb5bc] hover:bg-[#22272b]"><span>◫</span>Relatórios</a>
+      <a class="flex gap-4 px-5 py-3 text-sm font-semibold text-[#aeb5bc] hover:bg-[#22272b]"><span>⚙</span>Configurações</a>
+    </nav>
+    <div class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3"><b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b><div><p class="text-sm font-bold">Theo Otto</p><p class="text-xs text-[#9aa2a9]">Administrador</p></div></div>
+  </aside>
+  <main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+    <header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+      <div><h1 class="text-3xl font-black">Visão geral</h1><p class="mt-2 text-sm text-[#6f7780] ">Acompanhe sua operação e força de trabalho em tempo real.</p></div>
+      <div class="flex gap-3"><label class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]">⌕<input class="w-full outline-none" placeholder="Buscar no sistema"></label><button class="rounded-xl bg-orange px-6 text-sm font-bold hover:bg-orange-600 hover:scale-105 duration-300">+ Novo</button></div>
+    </header>
+    <section class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+      <article class="rounded-2xl border bg-white p-5"><div class="flex gap-4"><i class="h-11 w-1.5 rounded-full bg-[#2f9e6f]"></i><div><p class="text-sm font-bold text-[#6f7780]">Funcionários ativos</p><b class="block text-3xl">248</b><small class="font-bold text-[#2f9e6f]">+12 este mês</small></div></div></article>
+      <article class="rounded-2xl border bg-white p-5"><div class="flex gap-4"><i class="h-11 w-1.5 rounded-full bg-[#3b6ea8]"></i><div><p class="text-sm font-bold text-[#6f7780]">Cargos cadastrados</p><b class="block text-3xl">18</b><small class="font-bold text-[#3b6ea8]">3 sem ocupação</small></div></div></article>
+      <article class="rounded-2xl border bg-white p-5"><div class="flex gap-4"><i class="h-11 w-1.5 rounded-full bg-orange"></i><div><p class="text-sm font-bold text-[#6f7780]">Demandas abertas</p><b class="block text-3xl">36</b><small class="font-bold text-orange">9 prioritárias</small></div></div></article>
+      <article class="rounded-2xl border bg-white p-5"><div class="flex gap-4"><i class="h-11 w-1.5 rounded-full bg-[#2f9e6f]"></i><div><p class="text-sm font-bold text-[#6f7780]">Taxa de conclusão</p><b class="block text-3xl">87%</b><small class="font-bold text-[#2f9e6f]">+6% vs. mês anterior</small></div></div></article>
+    </section>
+    <section class="mt-7 grid gap-5 xl:grid-cols-[1.9fr_1fr]">
+      <article class="rounded-2xl border bg-white p-6"><h2 class="text-lg font-black">Demandas por setor</h2><p class="text-xs text-[#6f7780]">Últimos 30 dias</p>
+        <div class="mt-8 space-y-6">
+          <div class="grid grid-cols-[90px_1fr_36px] gap-4 text-xs font-bold"><span>Produção</span><div class="h-4 rounded-full bg-gray-200"><div class="h-full w-[78%] rounded-full bg-orange"></div></div><span>78%</span></div>
+          <div class="grid grid-cols-[90px_1fr_36px] gap-4 text-xs font-bold"><span>Logística</span><div class="h-4 rounded-full bg-gray-200"><div class="h-full w-[54%] rounded-full bg-orange"></div></div><span>54%</span></div>
+          <div class="grid grid-cols-[90px_1fr_36px] gap-4 text-xs font-bold"><span>Qualidade</span><div class="h-4 rounded-full bg-gray-200"><div class="h-full w-[42%] rounded-full bg-orange"></div></div><span>42%</span></div>
+          <div class="grid grid-cols-[90px_1fr_36px] gap-4 text-xs font-bold"><span>Manutenção</span><div class="h-4 rounded-full bg-gray-200"><div class="h-full w-[66%] rounded-full bg-orange"></div></div><span>66%</span></div>
+          <div class="grid grid-cols-[90px_1fr_36px] gap-4 text-xs font-bold"><span>Administrativo</span><div class="h-4 rounded-full bg-gray-200"><div class="h-full w-[33%] rounded-full bg-orange"></div></div><span>33%</span></div>
+        </div>
+      </article>
+      <article class="rounded-2xl border bg-white p-6"><h2 class="text-lg font-black">Atividade recente</h2>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-3"><i class="mt-1 size-3 rounded-full bg-[#2f9e6f]"></i><div class="flex-1"><b class="text-xs">Mariana Souza</b><p class="text-[11px] text-gray-500">concluiu demanda #142</p></div><small class="text-gray-500">há 8 min</small></div>
+          <div class="flex gap-3"><i class="mt-1 size-3 rounded-full bg-[#3b6ea8]"></i><div class="flex-1"><b class="text-xs">Carlos Lima</b><p class="text-[11px] text-gray-500">foi movido para Logística</p></div><small class="text-gray-500">há 32 min</small></div>
+          <div class="flex gap-3"><i class="mt-1 size-3 rounded-full bg-orange"></i><div class="flex-1"><b class="text-xs">Ana Ribeiro</b><p class="text-[11px] text-gray-500">teve cargo atualizado</p></div><small class="text-gray-500">há 1 h</small></div>
+          <div class="flex gap-3"><i class="mt-1 size-3 rounded-full bg-red-500"></i><div class="flex-1"><b class="text-xs">Manutenção</b><p class="text-[11px] text-gray-500">abriu demanda crítica</p></div><small class="text-gray-500">há 2 h</small></div>
+        </div>
+      </article>
+    </section>
+    <section class="mt-7 rounded-2xl border bg-white p-6"><div class="flex justify-between"><h2 class="text-lg font-black">Demandas prioritárias</h2><button class="rounded-full bg-gray-100 px-5 py-2 text-xs font-bold">Ver todas</button></div>
+      <div class="overflow-x-auto"><table class="mt-5 w-full min-w-[760px] text-left text-xs"><thead class="border-b text-gray-500"><tr><th class="py-3">Demanda</th><th>Responsável</th><th>Setor</th><th>Prazo</th><th>Status</th></tr></thead><tbody>
+        <tr><td class="py-5 font-bold">Revisar checklist de segurança</td><td>João Mendes</td><td>Produção</td><td>Hoje, 16:00</td><td><b class="rounded-full bg-red-500 px-3 py-2 text-white">Urgente</b></td></tr>
+        <tr><td class="py-4 font-bold">Atualizar escala do turno B</td><td>Mariana Souza</td><td>RH</td><td>Amanhã</td><td><b class="rounded-full bg-orange px-3 py-2 text-white">Em andamento</b></td></tr>
+        <tr><td class="py-4 font-bold">Inspecionar esteira 04</td><td>Lucas Vieira</td><td>Manutenção</td><td>17 ago</td><td><b class="rounded-full bg-[#3b6ea8] px-3 py-2 text-white">Planejada</b></td></tr>
+        <tr><td class="py-4 font-bold">Fechar inventário semanal</td><td>Camila Rocha</td><td>Logística</td><td>18 ago</td><td><b class="rounded-full bg-yellow-600 px-3 py-2 text-white">Em análise</b></td></tr>
+      </tbody></table></div>
+    </section>
+  </main>
+</div>
+</body></html>
