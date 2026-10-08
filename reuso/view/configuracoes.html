@@ -1,1 +1,203 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Configurações</title><script src="../tailwind.js"></script></head><body data-screen="configuracoes" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Configurações</title>
+  <script src="../tailwind.js"></script>
+</head>
+<body data-screen="configuracoes" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]">
+<div class="min-h-screen lg:flex">
+<aside class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+<div class="flex items-center gap-3 p-6">
+<b class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]">F</b>
+<div>
+<p class="font-bold">FORGE</p>
+<p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+</div>
+</div>
+<nav class="hidden flex-1 space-y-2 px-3 lg:block">
+<a href="index.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▦</span>Visão geral</a>
+<a href="funcionarios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>♣</span>Funcionários</a>
+<a href="cargos.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▤</span>Cargos</a>
+<a href="funcoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Funções</a>
+<a href="demandas.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>✓</span>Demandas</a>
+<a href="relatorios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◫</span>Relatórios</a>
+<a href="departamento.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▥</span>Departamento</a>
+<a href="jornada.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◷</span>Jornada</a>
+<a href="configuracoes.html" class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold">
+<span>⚙</span>Configurações</a>
+</nav>
+<a href="perfil.html" class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b>
+<div>
+<p class="text-sm font-bold">Theo Otto</p>
+<p class="text-xs text-[#9aa2a9]">Administrador</p>
+</div>
+</a>
+</aside>
+<main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+<header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+<div>
+<h1 class="text-3xl font-black">Configurações</h1>
+<p class="mt-2 text-sm text-[#6f7780]">Personalize regras, acessos e preferências da plataforma.</p>
+</div>
+<div class="flex gap-3">
+<label class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]">⌕<input class="w-full outline-none" placeholder="Buscar no sistema">
+</label>
+<button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">Salvar alterações</button>
+</div>
+</header>
+<section class="mb-6 flex flex-wrap gap-4 rounded-2xl border bg-white p-5">
+<input class="min-w-64 flex-1 rounded-xl border px-4 py-3 text-sm" placeholder="⌕  Buscar configuração">
+<button class="rounded-xl border px-5 text-sm">Todos os módulos⌄</button>
+<button class="rounded-xl border px-5 text-sm">Exibir: todos⌄</button>
+<b class="ml-auto rounded-full bg-gray-100 px-5 py-3 text-xs text-gray-500">6 categorias</b>
+</section>
+<section class="overflow-x-auto rounded-2xl border bg-white p-6">
+<table class="w-full min-w-[900px] text-left text-xs">
+<thead class="border-b text-gray-500">
+<tr>
+<th class="pb-4">Configuração</th>
+<th>Código</th>
+<th>Responsável</th>
+<th>Escopo</th>
+<th>Situação</th>
+<th>Atualização</th>
+<th>Editar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">MS</b>
+<div>
+<strong>Dados da empresa</strong>
+<p class="text-[10px] text-gray-500">Nome, CNPJ, unidades e identidade</p>
+</div>
+</div>
+</td>
+<td>CFG-01</td>
+<td>Theo Otto</td>
+<td class="text-gray-500">Organização</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">Hoje</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">CL</b>
+<div>
+<strong>Usuários e permissões</strong>
+<p class="text-[10px] text-gray-500">Perfis, níveis e controle de acesso</p>
+</div>
+</div>
+</td>
+<td>CFG-02</td>
+<td>Administrador</td>
+<td class="text-gray-500">Segurança</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">20 ago</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">AR</b>
+<div>
+<strong>Notificações</strong>
+<p class="text-[10px] text-gray-500">E-mail, alertas e lembretes</p>
+</div>
+</div>
+</td>
+<td>CFG-03</td>
+<td>Gestores</td>
+<td class="text-gray-500">Comunicação</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">18 ago</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">JV</b>
+<div>
+<strong>Fluxos de demanda</strong>
+<p class="text-[10px] text-gray-500">Status, prioridades e aprovações</p>
+</div>
+</div>
+</td>
+<td>CFG-04</td>
+<td>Operações</td>
+<td class="text-gray-500">Processos</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">15 ago</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">CR</b>
+<div>
+<strong>Jornada e calendário</strong>
+<p class="text-[10px] text-gray-500">Turnos, feriados e escalas</p>
+</div>
+</div>
+</td>
+<td>CFG-05</td>
+<td>RH</td>
+<td class="text-gray-500">Logística</td>
+<td>
+<span class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white">RH</span>
+</td>
+<td class="text-gray-500">10 ago</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">FM</b>
+<div>
+<strong>Integrações</strong>
+<p class="text-[10px] text-gray-500">ERP, ponto e exportação de dados</p>
+</div>
+</div>
+</td>
+<td>CFG-06</td>
+<td>TI</td>
+<td class="text-gray-500">Sistema</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">02 ago</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+</tbody>
+</table>
+<div class="flex justify-between pt-20 text-xs text-gray-500">
+<span>6 categorias de configuração</span>
+<span>‹　<b class="rounded-full bg-[#202428] px-3 py-2 text-white">1</b>　2　›</span>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

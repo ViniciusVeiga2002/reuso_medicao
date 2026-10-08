@@ -1,1 +1,203 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Funcionários</title><script src="../tailwind.js"></script></head><body data-screen="funcionarios" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funcionários</title>
+  <script src="../tailwind.js"></script>
+</head>
+<body data-screen="funcionarios" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]">
+<div class="min-h-screen lg:flex">
+<aside class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+<div class="flex items-center gap-3 p-6">
+<b class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]">F</b>
+<div>
+<p class="font-bold">FORGE</p>
+<p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+</div>
+</div>
+<nav class="hidden flex-1 space-y-2 px-3 lg:block">
+<a href="index.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▦</span>Visão geral</a>
+<a href="funcionarios.html" class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold">
+<span>♣</span>Funcionários</a>
+<a href="cargos.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▤</span>Cargos</a>
+<a href="funcoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Funções</a>
+<a href="demandas.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>✓</span>Demandas</a>
+<a href="relatorios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◫</span>Relatórios</a>
+<a href="departamento.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▥</span>Departamento</a>
+<a href="jornada.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◷</span>Jornada</a>
+<a href="configuracoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Configurações</a>
+</nav>
+<a href="perfil.html" class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b>
+<div>
+<p class="text-sm font-bold">Theo Otto</p>
+<p class="text-xs text-[#9aa2a9]">Administrador</p>
+</div>
+</a>
+</aside>
+<main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+<header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+<div>
+<h1 class="text-3xl font-black">Funcionários</h1>
+<p class="mt-2 text-sm text-[#6f7780]">Cadastre, edite e organize todos os colaboradores da empresa.</p>
+</div>
+<div class="flex gap-3">
+<label class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]">⌕<input class="w-full outline-none" placeholder="Buscar no sistema">
+</label>
+<button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">+ Novo</button>
+</div>
+</header>
+<section class="mb-6 flex flex-wrap gap-4 rounded-2xl border bg-white p-5">
+<input class="min-w-64 flex-1 rounded-xl border px-4 py-3 text-sm" placeholder="⌕  Buscar por nome, matrícula ou e-mail">
+<button class="rounded-xl border px-5 text-sm">Todos os setores⌄</button>
+<button class="rounded-xl border px-5 text-sm">Status: ativos⌄</button>
+<b class="ml-auto rounded-full bg-gray-100 px-5 py-3 text-xs text-gray-500">248 registros</b>
+</section>
+<section class="overflow-x-auto rounded-2xl border bg-white p-6">
+<table class="w-full min-w-[900px] text-left text-xs">
+<thead class="border-b text-gray-500">
+<tr>
+<th class="pb-4">Funcionário</th>
+<th>Matrícula</th>
+<th>Cargo</th>
+<th>Setor</th>
+<th>Status</th>
+<th>Admissão</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">MS</b>
+<div>
+<strong>Mariana Souza</strong>
+<p class="text-[10px] text-gray-500">mariana@empresa.com</p>
+</div>
+</div>
+</td>
+<td>00482</td>
+<td>Supervisora</td>
+<td class="text-gray-500">Produção</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">03/02/2022</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">CL</b>
+<div>
+<strong>Carlos Lima</strong>
+<p class="text-[10px] text-gray-500">carlos@empresa.com</p>
+</div>
+</div>
+</td>
+<td>00517</td>
+<td>Analista</td>
+<td class="text-gray-500">Logística</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">18/08/2023</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">AR</b>
+<div>
+<strong>Ana Ribeiro</strong>
+<p class="text-[10px] text-gray-500">ana@empresa.com</p>
+</div>
+</div>
+</td>
+<td>00391</td>
+<td>Técnica</td>
+<td class="text-gray-500">Qualidade</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">12/04/2021</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">JV</b>
+<div>
+<strong>João Vieira</strong>
+<p class="text-[10px] text-gray-500">joao@empresa.com</p>
+</div>
+</div>
+</td>
+<td>00602</td>
+<td>Mecânico</td>
+<td class="text-gray-500">Manutenção</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">07/11/2024</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">CR</b>
+<div>
+<strong>Camila Rocha</strong>
+<p class="text-[10px] text-gray-500">camila@empresa.com</p>
+</div>
+</div>
+</td>
+<td>00499</td>
+<td>Assistente</td>
+<td class="text-gray-500">Logística</td>
+<td>
+<span class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white">Férias</span>
+</td>
+<td class="text-gray-500">20/05/2023</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+<tr class="border-b">
+<td class="py-5">
+<div class="flex items-center gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-gray-200">FM</b>
+<div>
+<strong>Felipe Martins</strong>
+<p class="text-[10px] text-gray-500">felipe@empresa.com</p>
+</div>
+</div>
+</td>
+<td>00545</td>
+<td>Coordenador</td>
+<td class="text-gray-500">RH</td>
+<td>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Ativo</span>
+</td>
+<td class="text-gray-500">01/09/2023</td>
+<td class="text-blue-500">✎　⋮</td>
+</tr>
+</tbody>
+</table>
+<div class="flex justify-between pt-20 text-xs text-gray-500">
+<span>Mostrando 1–6 de 248 funcionários</span>
+<span>‹　<b class="rounded-full bg-[#202428] px-3 py-2 text-white">1</b>　2　›</span>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

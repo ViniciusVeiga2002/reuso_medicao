@@ -1,1 +1,85 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Detalhe do funcionário</title><script src="../tailwind.js"></script></head><body data-screen="detalheFuncionario" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhe do funcionário</title>
+  <script src="../tailwind.js"></script>
+</head>
+<body data-screen="detalheFuncionario" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]">
+<div class="min-h-screen lg:flex">
+<aside class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+<div class="flex items-center gap-3 p-6">
+<b class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]">F</b>
+<div>
+<p class="font-bold">FORGE</p>
+<p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+</div>
+</div>
+<nav class="hidden flex-1 space-y-2 px-3 lg:block">
+<a href="index.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▦</span>Visão geral</a>
+<a href="funcionarios.html" class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold">
+<span>♣</span>Funcionários</a>
+<a href="cargos.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▤</span>Cargos</a>
+<a href="funcoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Funções</a>
+<a href="demandas.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>✓</span>Demandas</a>
+<a href="relatorios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◫</span>Relatórios</a>
+<a href="departamento.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▥</span>Departamento</a>
+<a href="jornada.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◷</span>Jornada</a>
+<a href="configuracoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Configurações</a>
+</nav>
+<a href="perfil.html" class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b>
+<div>
+<p class="text-sm font-bold">Theo Otto</p>
+<p class="text-xs text-[#9aa2a9]">Administrador</p>
+</div>
+</a>
+</aside>
+<main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+<header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+<div>
+<h1 class="text-3xl font-black">Funcionários</h1>
+<p class="mt-2 text-sm text-[#6f7780]">Cadastre, edite e organize todos os colaboradores da empresa.</p>
+</div>
+<div class="flex gap-3">
+<label class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]">⌕<input class="w-full outline-none" placeholder="Buscar no sistema">
+</label>
+<button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">+ Novo</button>
+</div>
+</header>
+<section class="relative min-h-[700px] rounded-2xl border bg-white p-7 shadow-sm">
+<div class="flex items-center gap-5">
+<b class="grid size-16 place-items-center rounded-full bg-gray-100 text-xl">MS</b>
+<div>
+<h2 class="text-3xl font-black">Mariana Souza</h2>
+<p class="text-sm text-gray-500">Supervisora de Produção • Matrícula 00482</p>
+<p class="mt-1 text-xs font-bold text-emerald-600">Ativa desde 03/02/2022</p>
+</div>
+</div>
+<article class="mt-14 rounded-xl border bg-gray-50 p-5">
+<h3 class="text-lg font-black">Informações pessoais</h3>
+<div class="mt-3 space-y-2 text-sm text-gray-500">
+<p>E-mail: mariana@empresa.com</p>
+<p>Telefone: (41) 99942-1840</p>
+<p>CPF: ***.482.***-**</p>
+<p>Data de nascimento: 14/09/1994</p>
+</div>
+</article>
+<article class="mt-6 h-40 rounded-xl border bg-gray-50">
+</article>
+<article class="mt-6 h-40 rounded-xl border bg-gray-50">
+</article>
+</section>
+</main>
+</div>
+</body>
+</html>

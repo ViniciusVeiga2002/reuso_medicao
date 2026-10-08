@@ -1,1 +1,248 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meu perfil</title><script src="../tailwind.js"></script></head><body data-screen="perfil" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu perfil</title>
+  <script src="../tailwind.js"></script>
+</head>
+<body data-screen="perfil" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]">
+<div class="min-h-screen lg:flex">
+<aside class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+<div class="flex items-center gap-3 p-6">
+<b class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]">F</b>
+<div>
+<p class="font-bold">FORGE</p>
+<p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+</div>
+</div>
+<nav class="hidden flex-1 space-y-2 px-3 lg:block">
+<a href="index.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▦</span>Visão geral</a>
+<a href="funcionarios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>♣</span>Funcionários</a>
+<a href="cargos.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▤</span>Cargos</a>
+<a href="funcoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Funções</a>
+<a href="demandas.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>✓</span>Demandas</a>
+<a href="relatorios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◫</span>Relatórios</a>
+<a href="departamento.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▥</span>Departamento</a>
+<a href="jornada.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◷</span>Jornada</a>
+<a href="configuracoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Configurações</a>
+</nav>
+<a href="perfil.html" class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b>
+<div>
+<p class="text-sm font-bold">Theo Otto</p>
+<p class="text-xs text-[#9aa2a9]">Administrador</p>
+</div>
+</a>
+</aside>
+<main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+<header class="mb-7 flex justify-between">
+<div>
+<h1 class="text-3xl font-black">Meu perfil</h1>
+<p class="text-sm text-gray-500">Consulte seus dados, equipes, tarefas e jornada de trabalho.</p>
+</div>
+<div class="flex gap-3">
+<label class="hidden items-center rounded-xl border bg-white px-4 sm:flex">⌕　<input class="outline-none" placeholder="Buscar no sistema">
+</label>
+<button class="rounded-xl border bg-white px-4">♧</button>
+<button class="rounded-xl bg-[#ff7a18] px-5 font-bold">✎ Editar perfil</button>
+</div>
+</header>
+<section class="flex flex-col justify-between gap-5 rounded-2xl border bg-white p-6 sm:flex-row">
+<div class="flex items-center gap-5">
+<b class="grid size-16 place-items-center rounded-full bg-slate-100 text-xl">TO</b>
+<div>
+<h2 class="text-2xl font-black">Theo Otto <span class="rounded bg-emerald-100 px-2 py-1 text-xs text-emerald-700">Ativo</span>
+</h2>
+<p class="text-sm text-gray-500">Auxiliar Administrativo • Matrícula 00482</p>
+<p class="mt-2 text-xs text-gray-500">✉ theo.otto@forge.com　📍 Sede Curitiba　▣ Administrativo</p>
+</div>
+</div>
+<div class="text-right text-xs text-gray-500">Membro da equipe<br>
+<b class="text-black">Na empresa desde 19 mar 2025</b>
+</div>
+</section>
+<section class="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+<article class="rounded-2xl border bg-white p-5">
+<p class="text-sm font-bold text-gray-500">Horas este mês</p>
+<b class="mt-5 block text-2xl">152h 30min</b>
+<p class="text-xs text-gray-500">de 176h previstas</p>
+<div class="mt-5 h-1.5 rounded-full bg-gray-100">
+<div class="h-full w-[82%] rounded-full bg-[#ff7a18]">
+</div>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<p class="text-sm font-bold text-gray-500">Banco de horas</p>
+<b class="mt-5 block text-2xl">+ 08h 15min</b>
+<p class="text-xs text-gray-500">Saldo positivo</p>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<p class="text-sm font-bold text-gray-500">Jornada</p>
+<b class="mt-5 block text-2xl">08:00 - 17:48</b>
+<p class="text-xs text-gray-500">Segunda a sexta</p>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<p class="text-sm font-bold text-gray-500">Tarefas concluídas</p>
+<b class="mt-5 block text-2xl">18 de 24</b>
+<p class="text-xs text-gray-500">75% neste mês</p>
+</article>
+</section>
+<section class="mt-6 grid gap-5 xl:grid-cols-[1.5fr_1fr]">
+<article class="rounded-2xl border bg-white p-6">
+<h2 class="text-lg font-black">Informações pessoais</h2>
+<div class="mt-6 grid gap-6 text-sm sm:grid-cols-2">
+<div>
+<small class="text-gray-500">NOME COMPLETO</small>
+<p>Theo Otto</p>
+</div>
+<div>
+<small class="text-gray-500">CPF</small>
+<p>***.482.***-**</p>
+</div>
+<div>
+<small class="text-gray-500">E-MAIL</small>
+<p>theo.otto@forge.com</p>
+</div>
+<div>
+<small class="text-gray-500">TELEFONE</small>
+<p>(41) 99942-1840</p>
+</div>
+<div>
+<small class="text-gray-500">CARGO</small>
+<p>Auxiliar Administrativo</p>
+</div>
+<div>
+<small class="text-gray-500">GESTOR DIRETO</small>
+<p>Mariana Souza (Supervisora)</p>
+</div>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-6">
+<h2 class="text-lg font-black">Minhas equipes</h2>
+<div class="mt-5 space-y-3">
+<div class="rounded-xl border bg-gray-50 p-4">
+<b>Administrativo</b>
+<p class="text-xs text-gray-500">8 integrantes <span class="float-right">Membro</span>
+</p>
+</div>
+<div class="rounded-xl border bg-gray-50 p-4">
+<b>Comitê de Qualidade</b>
+<p class="text-xs text-gray-500">5 integrantes <span class="float-right text-orange-600">Líder</span>
+</p>
+</div>
+</div>
+</article>
+</section>
+<section class="mt-6 grid gap-5 xl:grid-cols-[1.5fr_1fr]">
+<article class="rounded-2xl border bg-white p-6">
+<div class="flex justify-between">
+<h2 class="text-lg font-black">Minhas tarefas recentes</h2>
+<a class="text-sm font-bold text-orange-600">Ver todas (12)</a>
+</div>
+<div class="mt-4 overflow-x-auto">
+<table class="w-full text-left text-xs">
+<thead class="bg-gray-50 text-gray-500">
+<tr>
+<th class="p-3">Tarefa</th>
+<th>Equipe</th>
+<th>Prazo</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b">
+<td class="p-3">Revisar planilha de admissão</td>
+<td class="text-gray-500">Administrativo</td>
+<td class="text-gray-500">Hoje, 17:00</td>
+<td>
+<b class="rounded px-2 py-1 bg-red-100 text-red-600">Urgente</b>
+</td>
+</tr>
+<tr class="border-b">
+<td class="p-3">Atualizar checklist de segurança</td>
+<td class="text-gray-500">Comitê Qualidade</td>
+<td class="text-gray-500">Amanhã</td>
+<td>
+<b class="rounded px-2 py-1 bg-orange-100 text-orange-600">Em andamento</b>
+</td>
+</tr>
+<tr class="border-b">
+<td class="p-3">Alinhamento de processos mensais</td>
+<td class="text-gray-500">Administrativo</td>
+<td class="text-gray-500">18 Ago</td>
+<td>
+<b class="rounded px-2 py-1 bg-blue-100 text-blue-600">Planejada</b>
+</td>
+</tr>
+<tr class="border-b">
+<td class="p-3">Gerar relatório de auditoria</td>
+<td class="text-gray-500">Comitê Qualidade</td>
+<td class="text-gray-500">20 Ago</td>
+<td>
+<b class="rounded px-2 py-1 bg-gray-200 text-gray-600">Aguardando</b>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-6">
+<div class="flex justify-between">
+<div>
+<h2 class="text-lg font-black">Resumo de horas</h2>
+<p class="text-xs text-gray-500">Esta semana (Seg - Sex)</p>
+</div>
+<b class="text-xl">38h 42min</b>
+</div>
+<div class="mt-7 flex h-36 items-end justify-around">
+<div class="text-center">
+<small>8h 12m</small>
+<div class="mx-auto my-3 w-4 rounded-t bg-[#ff7a18]" style="height:64px">
+</div>
+<small class="text-gray-500">SEG</small>
+</div>
+<div class="text-center">
+<small>8h 45m</small>
+<div class="mx-auto my-3 w-4 rounded-t bg-[#ff7a18]" style="height:72px">
+</div>
+<small class="text-gray-500">TER</small>
+</div>
+<div class="text-center">
+<small>8h 00m</small>
+<div class="mx-auto my-3 w-4 rounded-t bg-[#ff7a18]" style="height:62px">
+</div>
+<small class="text-gray-500">QUA</small>
+</div>
+<div class="text-center">
+<small>8h 15m</small>
+<div class="mx-auto my-3 w-4 rounded-t bg-[#ff7a18]" style="height:66px">
+</div>
+<small class="text-gray-500">QUI</small>
+</div>
+<div class="text-center">
+<small>5h 30m</small>
+<div class="mx-auto my-3 w-4 rounded-t bg-[#ff7a18]" style="height:45px">
+</div>
+<small class="text-gray-500">SEX</small>
+</div>
+</div>
+<div class="mt-5 flex justify-between border-t pt-4 text-xs text-gray-400">
+<span>Último registro hoje às 12:45</span>
+<b class="text-orange-600">Ver espelho de ponto →</b>
+</div>
+</article>
+</section>
+</main>
+</div>
+</body>
+</html>

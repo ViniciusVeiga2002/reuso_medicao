@@ -1,1 +1,220 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Detalhe da demanda</title><script src="../tailwind.js"></script></head><body data-screen="demandas" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhe da demanda</title>
+  <script src="../tailwind.js"></script>
+</head>
+<body data-screen="demandas" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]">
+<div class="min-h-screen lg:flex">
+<aside class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+<div class="flex items-center gap-3 p-6">
+<b class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]">F</b>
+<div>
+<p class="font-bold">FORGE</p>
+<p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+</div>
+</div>
+<nav class="hidden flex-1 space-y-2 px-3 lg:block">
+<a href="index.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▦</span>Visão geral</a>
+<a href="funcionarios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>♣</span>Funcionários</a>
+<a href="cargos.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▤</span>Cargos</a>
+<a href="funcoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Funções</a>
+<a href="demandas.html" class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold">
+<span>✓</span>Demandas</a>
+<a href="relatorios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◫</span>Relatórios</a>
+<a href="departamento.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▥</span>Departamento</a>
+<a href="jornada.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◷</span>Jornada</a>
+<a href="configuracoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Configurações</a>
+</nav>
+<a href="perfil.html" class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b>
+<div>
+<p class="text-sm font-bold">Theo Otto</p>
+<p class="text-xs text-[#9aa2a9]">Administrador</p>
+</div>
+</a>
+</aside>
+<main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+<header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+<div>
+<h1 class="text-3xl font-black">Demandas</h1>
+<p class="mt-2 text-sm text-[#6f7780]">Crie, delegue e acompanhe tarefas operacionais por prioridade e prazo.</p>
+</div>
+<div class="flex gap-3">
+<label class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]">⌕<input class="w-full outline-none" placeholder="Buscar no sistema">
+</label>
+<button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">+ Novo</button>
+</div>
+</header>
+<section class="mb-7 flex flex-wrap justify-between gap-4 rounded-2xl border bg-white p-5">
+<div class="flex gap-2">
+<b class="rounded-full bg-[#202428] px-5 py-2 text-xs text-white">Kanban</b>
+<b class="rounded-full bg-gray-100 px-5 py-2 text-xs">Lista</b>
+</div>
+<div class="flex gap-3">
+<button class="rounded-xl border px-5 text-sm">Todos os setores</button>
+<button class="rounded-xl border px-5 text-sm">Prioridade</button>
+<button class="rounded-full bg-[#ff7a18] px-5 text-xs font-bold">+ Demanda</button>
+</div>
+</section>
+<section class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+<div>
+<h2 class="mb-5 flex items-center justify-between text-xs font-black text-gray-500">ABERTAS<i class="size-3 rounded-full" style="background:#3b6ea8">
+</i>
+</h2>
+<div class="space-y-5">
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#142</b>
+<span class="rounded-full bg-red-500 px-3 py-1.5 text-[11px] font-bold text-white">Urgente</span>
+</div>
+<h3 class="my-4 text-sm font-black">Revisar checklist de segurança</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Produção</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">JM</b>
+<span class="text-xs text-gray-500">Hoje, 16:00</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#147</b>
+<span class="rounded-full bg-orange-500 px-3 py-1.5 text-[11px] font-bold text-white">Alta</span>
+</div>
+<h3 class="my-4 text-sm font-black">Atualizar escala do turno B</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">RH</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">MS</b>
+<span class="text-xs text-gray-500">Amanhã</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#151</b>
+<span class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white">Média</span>
+</div>
+<h3 class="my-4 text-sm font-black">Inventário semanal</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Logística</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">CR</b>
+<span class="text-xs text-gray-500">18 ago</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+</div>
+</div>
+<div>
+<h2 class="mb-5 flex items-center justify-between text-xs font-black text-gray-500">EM ANDAMENTO<i class="size-3 rounded-full" style="background:#ff7a18">
+</i>
+</h2>
+<div class="space-y-5">
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#139</b>
+<span class="rounded-full bg-orange-500 px-3 py-1.5 text-[11px] font-bold text-white">Alta</span>
+</div>
+<h3 class="my-4 text-sm font-black">Inspecionar esteira 04</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Manutenção</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">JV</b>
+<span class="text-xs text-gray-500">Hoje</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#145</b>
+<span class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white">Média</span>
+</div>
+<h3 class="my-4 text-sm font-black">Revisar treinamento NR-12</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Segurança</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">FM</b>
+<span class="text-xs text-gray-500">19 ago</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+</div>
+</div>
+<div>
+<h2 class="mb-5 flex items-center justify-between text-xs font-black text-gray-500">EM VALIDAÇÃO<i class="size-3 rounded-full" style="background:#d99a0b">
+</i>
+</h2>
+<div class="space-y-5">
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#134</b>
+<span class="rounded-full bg-orange-500 px-3 py-1.5 text-[11px] font-bold text-white">Alta</span>
+</div>
+<h3 class="my-4 text-sm font-black">Validar lote de matéria-prima</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Qualidade</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">AR</b>
+<span class="text-xs text-gray-500">Hoje</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#140</b>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Baixa</span>
+</div>
+<h3 class="my-4 text-sm font-black">Homologar novo fornecedor</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Compras</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">CL</b>
+<span class="text-xs text-gray-500">20 ago</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+</div>
+</div>
+<div>
+<h2 class="mb-5 flex items-center justify-between text-xs font-black text-gray-500">CONCLUÍDAS<i class="size-3 rounded-full" style="background:#2f9e6f">
+</i>
+</h2>
+<div class="space-y-5">
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#128</b>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Concluída</span>
+</div>
+<h3 class="my-4 text-sm font-black">Fechar apontamento mensal</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Produção</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">MS</b>
+<span class="text-xs text-gray-500">12 ago</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+<article class="rounded-2xl border bg-white p-5">
+<div class="flex justify-between">
+<b class="text-xs text-gray-500">#131</b>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Concluída</span>
+</div>
+<h3 class="my-4 text-sm font-black">Trocar rolamento linha 2</h3>
+<b class="rounded-full bg-gray-100 px-3 py-1 text-xs">Manutenção</b>
+<div class="mt-4 flex items-center gap-3 border-t pt-4">
+<b class="grid size-8 place-items-center rounded-full bg-gray-200 text-xs">JV</b>
+<span class="text-xs text-gray-500">13 ago</span>
+<span class="ml-auto">⋮</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

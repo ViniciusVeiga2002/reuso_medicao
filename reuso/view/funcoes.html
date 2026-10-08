@@ -1,1 +1,131 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Funções</title><script src="../tailwind.js"></script></head><body data-screen="funcoes" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funções</title>
+  <script src="../tailwind.js"></script>
+</head>
+<body data-screen="funcoes" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]">
+<div class="min-h-screen lg:flex">
+<aside class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col">
+<div class="flex items-center gap-3 p-6">
+<b class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]">F</b>
+<div>
+<p class="font-bold">FORGE</p>
+<p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+</div>
+</div>
+<nav class="hidden flex-1 space-y-2 px-3 lg:block">
+<a href="index.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▦</span>Visão geral</a>
+<a href="funcionarios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>♣</span>Funcionários</a>
+<a href="cargos.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▤</span>Cargos</a>
+<a href="funcoes.html" class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold">
+<span>⚙</span>Funções</a>
+<a href="demandas.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>✓</span>Demandas</a>
+<a href="relatorios.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◫</span>Relatórios</a>
+<a href="departamento.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>▥</span>Departamento</a>
+<a href="jornada.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>◷</span>Jornada</a>
+<a href="configuracoes.html" class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold">
+<span>⚙</span>Configurações</a>
+</nav>
+<a href="perfil.html" class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3">
+<b class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs">TO</b>
+<div>
+<p class="text-sm font-bold">Theo Otto</p>
+<p class="text-xs text-[#9aa2a9]">Administrador</p>
+</div>
+</a>
+</aside>
+<main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+<header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+<div>
+<h1 class="text-3xl font-black">Funções</h1>
+<p class="mt-2 text-sm text-[#6f7780]">Organize responsabilidades e competências associadas aos cargos.</p>
+</div>
+<div class="flex gap-3">
+<label class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]">⌕<input class="w-full outline-none" placeholder="Buscar no sistema">
+</label>
+<button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">+ Novo</button>
+</div>
+</header>
+<section class="rounded-2xl border bg-white p-7">
+<div class="mb-8 flex flex-wrap justify-between gap-4">
+<div>
+<h2 class="text-lg font-black">Catálogo de funções</h2>
+<p class="text-xs text-gray-500">Funções reutilizáveis podem ser atribuídas a vários cargos.</p>
+</div>
+<div class="flex gap-4">
+<input class="rounded-xl border px-5 text-xs" placeholder="⌕ Buscar função">
+<button class="rounded-full bg-[#ff7a18] px-5 text-xs font-bold">+ Nova função</button>
+</div>
+</div>
+<div class="space-y-4">
+<article class="grid items-center gap-4 rounded-2xl border bg-gray-50 p-5 md:grid-cols-[48px_1fr_90px_90px_70px]">
+<b class="grid size-11 place-items-center rounded-xl bg-[#202428] text-white">⚙</b>
+<div>
+<h3 class="font-black">Aprovar ordem de produção</h3>
+<p class="mt-1 text-xs text-gray-500">Pode aprovar e encerrar ordens do setor.</p>
+<b class="mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-xs">Produção</b>
+</div>
+<span class="text-xs font-bold text-gray-500">6 cargos</span>
+<span class="rounded-full bg-red-500 px-3 py-1.5 text-[11px] font-bold text-white">Alta</span>
+<span class="text-blue-500">✎　⋮</span>
+</article>
+<article class="grid items-center gap-4 rounded-2xl border bg-gray-50 p-5 md:grid-cols-[48px_1fr_90px_90px_70px]">
+<b class="grid size-11 place-items-center rounded-xl bg-[#202428] text-white">⚙</b>
+<div>
+<h3 class="font-black">Delegar demanda</h3>
+<p class="mt-1 text-xs text-gray-500">Distribui atividades para membros da equipe.</p>
+<b class="mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-xs">Gestão</b>
+</div>
+<span class="text-xs font-bold text-gray-500">9 cargos</span>
+<span class="rounded-full bg-red-500 px-3 py-1.5 text-[11px] font-bold text-white">Alta</span>
+<span class="text-blue-500">✎　⋮</span>
+</article>
+<article class="grid items-center gap-4 rounded-2xl border bg-gray-50 p-5 md:grid-cols-[48px_1fr_90px_90px_70px]">
+<b class="grid size-11 place-items-center rounded-xl bg-[#202428] text-white">⚙</b>
+<div>
+<h3 class="font-black">Auditar checklist</h3>
+<p class="mt-1 text-xs text-gray-500">Valida checklists operacionais e registra não conformidades.</p>
+<b class="mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-xs">Qualidade</b>
+</div>
+<span class="text-xs font-bold text-gray-500">4 cargos</span>
+<span class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white">Média</span>
+<span class="text-blue-500">✎　⋮</span>
+</article>
+<article class="grid items-center gap-4 rounded-2xl border bg-gray-50 p-5 md:grid-cols-[48px_1fr_90px_90px_70px]">
+<b class="grid size-11 place-items-center rounded-xl bg-[#202428] text-white">⚙</b>
+<div>
+<h3 class="font-black">Gerir inventário</h3>
+<p class="mt-1 text-xs text-gray-500">Atualiza saldo, movimentações e inventários.</p>
+<b class="mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-xs">Logística</b>
+</div>
+<span class="text-xs font-bold text-gray-500">3 cargos</span>
+<span class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white">Média</span>
+<span class="text-blue-500">✎　⋮</span>
+</article>
+<article class="grid items-center gap-4 rounded-2xl border bg-gray-50 p-5 md:grid-cols-[48px_1fr_90px_90px_70px]">
+<b class="grid size-11 place-items-center rounded-xl bg-[#202428] text-white">⚙</b>
+<div>
+<h3 class="font-black">Abrir manutenção</h3>
+<p class="mt-1 text-xs text-gray-500">Registra solicitação de manutenção preventiva/corretiva.</p>
+<b class="mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-xs">Manutenção</b>
+</div>
+<span class="text-xs font-bold text-gray-500">7 cargos</span>
+<span class="rounded-full bg-emerald-600 px-3 py-1.5 text-[11px] font-bold text-white">Baixa</span>
+<span class="text-blue-500">✎　⋮</span>
+</article>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

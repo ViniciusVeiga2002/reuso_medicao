@@ -1,1 +1,345 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relatórios</title><script src="../tailwind.js"></script></head><body data-screen="relatorios" class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"><script src="screens.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Relatórios</title>
+    <script src="../tailwind.js"></script>
+  </head>
+  <body
+    data-screen="relatorios"
+    class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"
+  >
+    <div class="min-h-screen lg:flex">
+      <aside
+        class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col"
+      >
+        <div class="flex items-center gap-3 p-6">
+          <b
+            class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]"
+            >F</b
+          >
+          <div>
+            <p class="font-bold">FORGE</p>
+            <p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+          </div>
+        </div>
+        <nav class="hidden flex-1 space-y-2 px-3 lg:block">
+          <a
+            href="index.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>▦</span>Visão geral</a
+          >
+          <a
+            href="funcionarios.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>♣</span>Funcionários</a
+          >
+          <a
+            href="cargos.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>▤</span>Cargos</a
+          >
+          <a
+            href="funcoes.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>⚙</span>Funções</a
+          >
+          <a
+            href="demandas.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>✓</span>Demandas</a
+          >
+          <a
+            href="relatorios.html"
+            class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold"
+          >
+            <span>◫</span>Relatórios</a
+          >
+          <a
+            href="departamento.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>▥</span>Departamento</a
+          >
+          <a
+            href="jornada.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>◷</span>Jornada</a
+          >
+          <a
+            href="configuracoes.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>⚙</span>Configurações</a
+          >
+        </nav>
+        <a
+          href="perfil.html"
+          class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3"
+        >
+          <b
+            class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs"
+            >TO</b
+          >
+          <div>
+            <p class="text-sm font-bold">Theo Otto</p>
+            <p class="text-xs text-[#9aa2a9]">Administrador</p>
+          </div>
+        </a>
+      </aside>
+      <main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+        <header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+          <div>
+            <h1 class="text-3xl font-black">Relatórios</h1>
+            <p class="mt-2 text-sm text-[#6f7780]">
+              Analise desempenho, produtividade e evolução da equipe.
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <label
+              class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]"
+              >⌕<input
+                class="w-full outline-none"
+                placeholder="Buscar no sistema"
+              />
+            </label>
+            <button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">
+              Exportar PDF
+            </button>
+          </div>
+        </header>
+        <section class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="rounded-2xl border bg-white p-5">
+            <div class="flex gap-4">
+              <i class="h-11 w-1.5 rounded-full" style="background: #2f9e6f">
+              </i>
+              <div>
+                <p class="text-sm font-bold text-gray-500">
+                  Produtividade média
+                </p>
+                <b class="block text-3xl">84%</b>
+                <small class="font-bold" style="color: #2f9e6f"
+                  >+5% este mês</small
+                >
+              </div>
+            </div>
+          </article>
+          <article class="rounded-2xl border bg-white p-5">
+            <div class="flex gap-4">
+              <i class="h-11 w-1.5 rounded-full" style="background: #3b6ea8">
+              </i>
+              <div>
+                <p class="text-sm font-bold text-gray-500">Horas trabalhadas</p>
+                <b class="block text-3xl">31.420</b>
+                <small class="font-bold" style="color: #3b6ea8"
+                  >3 sem ocupação</small
+                >
+              </div>
+            </div>
+          </article>
+          <article class="rounded-2xl border bg-white p-5">
+            <div class="flex gap-4">
+              <i class="h-11 w-1.5 rounded-full" style="background: #ff7a18">
+              </i>
+              <div>
+                <p class="text-sm font-bold text-gray-500">
+                  Demandas concluídas
+                </p>
+                <b class="block text-3xl">428</b>
+                <small class="font-bold" style="color: #ff7a18"
+                  >92 dentro do prazo</small
+                >
+              </div>
+            </div>
+          </article>
+          <article class="rounded-2xl border bg-white p-5">
+            <div class="flex gap-4">
+              <i class="h-11 w-1.5 rounded-full" style="background: #2f9e6f">
+              </i>
+              <div>
+                <p class="text-sm font-bold text-gray-500">
+                  Eficiência operacional
+                </p>
+                <b class="block text-3xl">91%</b>
+                <small class="font-bold" style="color: #2f9e6f"
+                  >+4% vs. mês anterior</small
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="mt-7 grid gap-5 xl:grid-cols-[1.9fr_1fr]">
+          <article class="rounded-2xl border bg-white p-6">
+            <h2 class="text-lg font-black">Produtividade por setor</h2>
+            <p class="text-xs text-gray-500">Comparativo mensal</p>
+            <div class="mt-8 space-y-6">
+              <div
+                class="grid grid-cols-[100px_1fr_36px] gap-4 text-xs font-bold"
+              >
+                <span>90%</span>
+                <div class="h-4 rounded-full bg-gray-200">
+                  <div
+                    class="h-full rounded-full bg-[#ff7a18]"
+                    style="width: 78%"
+                  ></div>
+                </div>
+                <span>78%</span>
+              </div>
+              <div
+                class="grid grid-cols-[100px_1fr_36px] gap-4 text-xs font-bold"
+              >
+                <span>8,5/10</span>
+                <div class="h-4 rounded-full bg-gray-200">
+                  <div
+                    class="h-full rounded-full bg-[#ff7a18]"
+                    style="width: 54%"
+                  ></div>
+                </div>
+                <span>54%</span>
+              </div>
+              <div
+                class="grid grid-cols-[100px_1fr_36px] gap-4 text-xs font-bold"
+              >
+                <span>Qualidade • 88%</span>
+                <div class="h-4 rounded-full bg-gray-200">
+                  <div
+                    class="h-full rounded-full bg-[#ff7a18]"
+                    style="width: 42%"
+                  ></div>
+                </div>
+                <span>42%</span>
+              </div>
+              <div
+                class="grid grid-cols-[100px_1fr_36px] gap-4 text-xs font-bold"
+              >
+                <span>3,0%</span>
+                <div class="h-4 rounded-full bg-gray-200">
+                  <div
+                    class="h-full rounded-full bg-[#ff7a18]"
+                    style="width: 66%"
+                  ></div>
+                </div>
+                <span>66%</span>
+              </div>
+              <div
+                class="grid grid-cols-[100px_1fr_36px] gap-4 text-xs font-bold"
+              >
+                <span>Administrativo • 72%</span>
+                <div class="h-4 rounded-full bg-gray-200">
+                  <div
+                    class="h-full rounded-full bg-[#ff7a18]"
+                    style="width: 33%"
+                  ></div>
+                </div>
+                <span>33%</span>
+              </div>
+            </div>
+          </article>
+          <article class="rounded-2xl border bg-white p-6">
+            <h2 class="text-lg font-black">Resumo do período</h2>
+            <div class="mt-8 space-y-7">
+              <div>
+                <b class="text-sm">2h 18min</b>
+                <p class="text-xs text-gray-500">
+                  Produção • 96% de eficiência
+                </p>
+              </div>
+              <div>
+                <b class="text-sm">Maior evolução</b>
+                <p class="text-xs text-gray-500">Logística • +18% no mês</p>
+              </div>
+              <div>
+                <b class="text-sm">Atenção necessária</b>
+                <p class="text-xs text-gray-500">Qualidade • 3 atrasos</p>
+              </div>
+              <div>
+                <b class="text-sm">3,0%</b>
+                <p class="text-xs text-gray-500">
+                  7 demandas críticas no período
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="mt-7 rounded-2xl border bg-white p-6">
+          <div class="flex justify-between">
+            <h2 class="text-lg font-black">Indicadores detalhados</h2>
+            <button class="rounded-full bg-gray-100 px-5 text-xs font-bold">
+              Baixar CSV
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="mt-5 w-full min-w-[700px] text-left text-xs">
+              <thead class="border-b text-gray-500">
+                <tr>
+                  <th class="py-3">Indicador</th>
+                  <th>Resultado</th>
+                  <th>Meta</th>
+                  <th>Variação</th>
+                  <th>Situação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-5 font-bold">Taxa de conclusão</td>
+                  <td>91%</td>
+                  <td>90%</td>
+                  <td>+4,2%</td>
+                  <td>
+                    <span
+                      class="rounded-full bg-red-500 px-3 py-1.5 text-[11px] font-bold text-white"
+                      >Acima da meta</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-5 font-bold">Tempo médio por demanda</td>
+                  <td>2h 18min</td>
+                  <td>2h 30min</td>
+                  <td>-8 min</td>
+                  <td>
+                    <span
+                      class="rounded-full bg-orange-500 px-3 py-1.5 text-[11px] font-bold text-white"
+                      >Positivo</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-5 font-bold">Absenteísmo</td>
+                  <td>2,4%</td>
+                  <td>3,0%</td>
+                  <td>-0,6%</td>
+                  <td>
+                    <span
+                      class="rounded-full bg-blue-500 px-3 py-1.5 text-[11px] font-bold text-white"
+                      >Controlado</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-5 font-bold">Satisfação interna</td>
+                  <td>8,7/10</td>
+                  <td>8,5/10</td>
+                  <td>+0,2</td>
+                  <td>
+                    <span
+                      class="rounded-full bg-yellow-500 px-3 py-1.5 text-[11px] font-bold text-white"
+                      >Excelente</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
