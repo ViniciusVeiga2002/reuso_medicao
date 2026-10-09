@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jornada</title>
-    <script src="../tailwind.js"></script>
+    <script src="../assets/vendor/tailwind.js"></script>
   </head>
   <body
     data-screen="jornada"
@@ -127,13 +127,13 @@
           <b
             id="cadastro-total"
             class="rounded-full bg-gray-100 px-5 py-3 text-xs text-gray-500"
-            >3 registros</b
+            >0 registros</b
           >
         </section>
         <section class="rounded-2xl border bg-white p-6">
           <h2 class="mb-2 text-lg font-black">Jornadas cadastradas</h2>
           <p class="mb-6 text-xs text-gray-500">
-            Dados de exemplo.
+            Jornadas registradas no banco de dados.
           </p>
           <p
             id="cadastro-aviso"
@@ -149,31 +149,11 @@
                   <th class="pb-4">Turno</th>
                   <th class="pb-4">Carga horária semanal (horas)</th>
                   <th class="pb-4">Criado em</th>
+                  <th class="pb-4">Ações</th>
                 </tr>
               </thead>
               <tbody id="cadastro-linhas">
-              <tr class="border-b">
-                <td class="py-5">1</td>
-                <td class="py-5">CLT</td>
-                <td class="py-5">Diurno</td>
-                <td class="py-5">44 h</td>
-                <td class="py-5">01/08/2026</td>
-              </tr>
-              <tr class="border-b">
-                <td class="py-5">2</td>
-                <td class="py-5">PJ</td>
-                <td class="py-5">Integral</td>
-                <td class="py-5">40 h</td>
-                <td class="py-5">05/08/2026</td>
-              </tr>
-              <tr class="border-b">
-                <td class="py-5">3</td>
-                <td class="py-5">Estágio</td>
-                <td class="py-5">Vespertino</td>
-                <td class="py-5">30 h</td>
-                <td class="py-5">10/08/2026</td>
-              </tr>
-            </tbody>
+              </tbody>
             </table>
           </div>
           <p id="cadastro-resumo" class="mt-8 text-xs text-gray-500">
@@ -186,7 +166,8 @@
           class="w-[calc(100%-2rem)] max-w-lg rounded-2xl border bg-white p-6 shadow-xl sm:p-8"
           style="max-height: 90vh; overflow-y: auto"
         >
-          <form id="cadastro-form" action="../cadastro-jornada.php" method="post">
+          <form id="cadastro-form" action="../api/jornada/cadastro-jornada.php" method="post">
+            <input type="hidden" id="campo-id" name="id" />
             <div class="mb-5 flex items-center justify-between gap-4">
               <h2 id="cadastro-titulo" class="text-xl font-black">
                 Adicionar jornada
@@ -201,7 +182,7 @@
               </button>
             </div>
             <p class="mb-6 text-sm text-gray-500">
-              Preencha os campos obrigatórios para adicionar a jornada.
+              Preencha os campos da jornada.
             </p>
             <div class="space-y-5">
               <label class="block text-sm font-bold" for="campo-tipo_vinculo"
@@ -261,6 +242,6 @@
         </dialog>
       </main>
     </div>
-    <script src="cadastros.js"></script>
+    <script src="../assets/js/jornada.js"></script>
   </body>
 </html>

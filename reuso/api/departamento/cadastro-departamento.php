@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/config/Database.php';
+require_once __DIR__ . '/../../config/Database.php';
 
     header('Content-Type: text/plain; charset=utf-8');
     $nome = $_POST['nome'] ?? '';

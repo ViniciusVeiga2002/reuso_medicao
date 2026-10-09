@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . '/modelos.php';
+require_once __DIR__ . '/../models/modelos.php';
 
 $folha = new ProcessadorFolha();
 $folha->setEstrategia(new CalculoCLT());

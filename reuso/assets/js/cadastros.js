@@ -1,4 +1,3 @@
-// O formulário envia os inputs diretamente por POST para o PHP definido no HTML.
 const modal = document.getElementById('cadastro-modal');
 const formulario = document.getElementById('cadastro-form');
 const busca = document.getElementById('cadastro-busca');
