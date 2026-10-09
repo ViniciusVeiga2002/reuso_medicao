@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Departamento</title>
+    <script src="../assets/vendor/tailwind.js"></script>
+  <script src="../assets/js/variabilidade.js" defer></script>
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+</head>
+  <body
+    data-screen="departamento"
+    class="min-h-screen bg-[#f3f4f6] font-sans text-[#202428]"
+  >
+    <div class="min-h-screen lg:flex">
+      <aside
+        class="bg-[#171a1d] text-white lg:fixed lg:inset-y-0 lg:flex lg:w-60 lg:flex-col"
+      >
+        <div class="flex items-center gap-3 p-6">
+          <b
+            class="grid size-10 place-items-center rounded-xl bg-[#ff7a18] text-xl text-[#171a1d]"
+            >F</b
+          >
+          <div>
+            <p class="font-bold">FORGE</p>
+            <p class="text-[9px] font-bold text-[#8f989f]">WORKFORCE</p>
+          </div>
+        </div>
+        <nav class="hidden flex-1 space-y-2 px-3 lg:block">
+          <a
+            href="index.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>▦</span>Visão geral</a
+          >
+          <a
+            href="funcionarios.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>♣</span>Funcionários</a
+          >
+          <a
+            href="cargos.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>▤</span>Cargos</a
+          >
+          <a
+            href="funcoes.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>⚙</span>Funções</a
+          >
+          <a
+            href="demandas.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>✓</span>Demandas</a
+          >
+          <a
+            href="relatorios.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>◫</span>Relatórios</a
+          >
+          <a
+            href="departamento.html"
+            class="flex gap-4 rounded-lg border-l-4 border-[#ff7a18] bg-[#22272b] text-white px-4 py-3 text-sm font-bold"
+          >
+            <span>▥</span>Departamento</a
+          >
+          <a
+            href="jornada.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>◷</span>Jornada</a
+          >
+          <a
+            href="configuracoes.html"
+            class="flex gap-4 rounded-lg text-[#aeb5bc] px-4 py-3 text-sm font-bold"
+          >
+            <span>⚙</span>Configurações</a
+          >
+        </nav>
+        <a
+          href="perfil.html"
+          class="hidden border-t border-[#30363b] p-6 lg:flex lg:items-center lg:gap-3"
+        >
+          <b
+            class="grid size-9 place-items-center rounded-full bg-[#394149] text-xs"
+            >TO</b
+          >
+          <div>
+            <p class="text-sm font-bold">Theo Otto</p>
+            <p class="text-xs text-[#9aa2a9]">Funcionario</p>
+          </div>
+        </a>
+      </aside>
+      <main class="w-full p-5 sm:p-8 lg:ml-60 lg:p-10">
+        <header class="mb-9 flex flex-col gap-5 sm:flex-row sm:justify-between">
+          <div>
+            <h1 class="text-3xl font-black">Departamento</h1>
+            <p class="mt-2 text-sm text-[#6f7780]">
+              Cadastre e organize os departamentos da empresa.
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <label
+              class="flex h-10 w-52 items-center gap-3 rounded-xl border bg-white px-4 text-xs text-[#6f7780]"
+              >⌕<input
+                class="w-full outline-none"
+                placeholder="Buscar no sistema"
+              />
+            </label>
+            <button class="rounded-xl bg-[#ff7a18] px-6 text-sm font-bold">
+              + Adicionar departamento
+            </button>
+          </div>
+        </header>
+        <section
+          class="mb-6 flex flex-wrap items-center gap-4 rounded-2xl border bg-white p-5"
+        >
+          <input
+            id="cadastro-busca"
+            class="min-w-64 flex-1 rounded-xl border px-4 py-3 text-sm"
+            placeholder="Buscar departamento"
+            aria-label="Buscar departamento"
+          />
+          <b
+            id="cadastro-total"
+            class="rounded-full bg-gray-100 px-5 py-3 text-xs text-gray-500"
+            >0 registros</b
+          >
+        </section>
+        <section class="rounded-2xl border bg-white p-6">
+          <h2 class="mb-2 text-lg font-black">Departamentos cadastrados</h2>
+          <p class="mb-6 text-xs text-gray-500">
+            Departamentos registrados no banco de dados.
+          </p>
+          <p
+            id="cadastro-aviso"
+            role="status"
+            class="mb-4 text-sm text-emerald-700"
+          ></p>
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[600px] text-left text-xs">
+              <thead class="border-b text-gray-500">
+                <tr>
+                  <th class="pb-4">ID</th>
+                  <th class="pb-4">Nome do departamento</th>
+                  <th class="pb-4">Criado em</th>
+                  <th class="pb-4">Ações</th>
+                </tr>
+              </thead>
+              <tbody id="cadastro-linhas">
+            </tbody>
+            </table>
+          </div>
+          <p id="cadastro-resumo" class="mt-8 text-xs text-gray-500">
+            Carregando registros…
+          </p>
+        </section>
+        <dialog
+          id="cadastro-modal"
+          aria-labelledby="cadastro-titulo"
+          class="w-[calc(100%-2rem)] max-w-lg rounded-2xl border bg-white p-6 shadow-xl sm:p-8"
+          style="max-height: 90vh; overflow-y: auto"
+        >
+          <form id="cadastro-form" action="../api/departamento/cadastro-departamento.php" method="post">
+            <input type="hidden" id="campo-id" name="id" />
+            <div class="mb-5 flex items-center justify-between gap-4">
+              <h2 id="cadastro-titulo" class="text-xl font-black">
+                Adicionar departamento
+              </h2>
+              <button
+                type="button"
+                data-fechar
+                aria-label="Fechar modal"
+                class="rounded-lg border px-3 py-2"
+              >
+                ✕
+              </button>
+            </div>
+            <p class="mb-6 text-sm text-gray-500">
+              Preencha o nome do departamento.
+            </p>
+            <div class="space-y-5">
+              <label class="block text-sm font-bold" for="campo-nome"
+                >Nome do departamento *<input
+                  id="campo-nome"
+                  name="nome"
+                  type="text"
+                  required
+                  maxlength="100"
+                  class="mt-2 w-full rounded-xl border px-4 py-3 font-normal"
+                />
+              </label>
+            </div>
+            <p
+              id="cadastro-erro"
+              role="alert"
+              class="mt-4 text-sm text-red-600"
+            ></p>
+            <div class="mt-7 flex justify-end gap-3">
+              <button
+                type="button"
+                data-fechar
+                class="rounded-xl border px-5 py-3 text-sm font-bold"
+              >
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                class="rounded-xl bg-[#ff7a18] px-5 py-3 text-sm font-bold"
+              >
+                Adicionar
+              </button>
+            </div>
+          </form>
+        </dialog>
+      </main>
+    </div>
+    <script src="../assets/js/departamento_user.js"></script>
+  </body>
+</html>

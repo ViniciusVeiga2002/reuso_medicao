@@ -29,3 +29,10 @@ php -S localhost:8000
 pra ver como ta -> http://localhost:8000/view/index.html.
 
 pra rodar precisa do banco configurado no `.env`.
+
+## Exemplo de variabilidade
+
+O comun é a operação com as mesmas telas e operações.
+A variação é a identidade visual da empresa: nome, sigla e cor principal.
+Pode configurar em `view/configuracoes.html`
+O script compartilhado `assets/js/variabilidade.js` aplica a configuração nas telas.
